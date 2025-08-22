@@ -12,4 +12,4 @@ When it runs, the system will show you a truth it tried to bury.
 
 (Proceed. But don't say we didn't warn you.)
 
--- MockOS Dev Team
+-- MemeOS Dev Team

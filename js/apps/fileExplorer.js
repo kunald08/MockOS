@@ -10,7 +10,7 @@ function createOhioFileExplorerWindow() {
         'C:': {
             type: 'drive',
             children: {
-                'MockOS': { type: 'folder', children: {} },
+                'MemeOS': { type: 'folder', children: {} },
                 'Music': {
                     type: 'folder',
                     children: {
@@ -191,7 +191,7 @@ function createOhioFileExplorerWindow() {
         </div>
         <div class="p-1 bg-gray-100 border-t border-gray-400 text-xs flex justify-between">
             <p id="item-count">0 items</p>
-            <p id="status-bar">MockOS Build 0.1</p>
+            <p id="status-bar">MemeOS Build 0.1</p>
         </div>
     `;
 

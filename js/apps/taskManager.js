@@ -3,7 +3,7 @@ function createTaskManagerWindow() {
   win.dataset.app = 'taskManager';
 
   const allProcesses = [
-    { name: 'MockOS-kernel.exe', user: 'SYSTEM', cpu: '45%', mem: '128.5 MB' },
+    { name: 'MemeOS-kernel.exe', user: 'SYSTEM', cpu: '45%', mem: '128.5 MB' },
     { name: 'impostor.exe', user: 'SYSTEM', cpu: '99%', mem: '666.0 MB', isThreat: true },
     { name: 'explorer.exe', user: 'kunald08', cpu: '5%', mem: '85.2 MB' },
     { name: 'svchost.exe', user: 'SYSTEM', cpu: '2%', mem: '25.1 MB' },
@@ -17,7 +17,7 @@ function createTaskManagerWindow() {
     { name: 'skibidi-antivirus.exe', user: 'kunald08', cpu: '1%', mem: '30.3 MB' },
   ];
 
-  const processes = allProcesses.filter(p => !p.isThreat || !window.MockOS.state.quarantinedThreats.has(p.name));
+  const processes = allProcesses.filter(p => !p.isThreat || !window.MemeOS.state.quarantinedThreats.has(p.name));
 
   let selectedProcess = null;
 
@@ -83,7 +83,7 @@ function createTaskManagerWindow() {
     if (!selectedProcess) return;
 
     const processName = selectedProcess.dataset.process;
-    const criticalProcesses = ['MockOS-kernel.exe', 'explorer.exe', 'svchost.exe', 'csrss.exe', 'winlogon.exe'];
+    const criticalProcesses = ['MemeOS-kernel.exe', 'explorer.exe', 'svchost.exe', 'csrss.exe', 'winlogon.exe'];
 
     if (criticalProcesses.includes(processName)) {
       triggerBSOD();

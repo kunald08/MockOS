@@ -1,4 +1,4 @@
-/* MockOS Terminal */
+/* MemeOS Terminal */
 function createTerminalWindow() {
   const win = makeWindow('Terminal');
   win.classList.remove('w-96', 'h-64');
@@ -37,7 +37,7 @@ function createTerminalWindow() {
     output.scrollTop = output.scrollHeight;
   };
 
-  write('MockOS v0.1. Type `help` for a list of commands.');
+  write('MemeOS v0.1. Type `help` for a list of commands.');
 
   input.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
@@ -105,7 +105,7 @@ function handleCmd(cmd, write) {
         write(memes[Math.floor(Math.random() * memes.length)]);
         break;
     case 'shutdown':
-        write('Are you sure? MockOS is the only thing that matters. (This command is for display purposes only)');
+        write('Are you sure? MemeOS is the only thing that matters. (This command is for display purposes only)');
         break;
     case 'reboot':
         write('Rebooting... just kidding. You thought.');
@@ -140,9 +140,9 @@ function handleCmd(cmd, write) {
       break;
     case 'neofetch':
       write(`
-        .--.      Kunald08@MockOS
+        .--.      Kunald08@MemeOS
        |o_o |     --------------
-       |:_/ |     OS: MockOS
+       |:_/ |     OS: MemeOS
        x86_64
       //   \ \    Kernel: 6.9.420-generic
      (|     | )   Uptime: 69 days, 4 hours, 20 mins

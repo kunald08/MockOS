@@ -1,6 +1,6 @@
-//* MockOS Desktop & Window Manager */
+//* MemeOS Desktop & Window Manager */
 
-window.MockOS = {
+window.MemeOS = {
     state: {
         quarantinedThreats: new Set(),
         lastWindowPosition: { top: 5, left: 20 },
@@ -34,8 +34,8 @@ function openApp(app, params = {}) {
         const winHeight = win.offsetHeight;
 
         // Add cascading position logic
-        const { top, left } = window.MockOS.state.lastWindowPosition;
-        const offset = window.MockOS.state.windowOffset;
+        const { top, left } = window.MemeOS.state.lastWindowPosition;
+        const offset = window.MemeOS.state.windowOffset;
         const desktopHeight = desktop.clientHeight;
         const desktopWidth = desktop.clientWidth;
 
@@ -52,7 +52,7 @@ function openApp(app, params = {}) {
         win.style.left = `${newLeft}px`;
         win.style.visibility = 'visible'; // Make it visible now that it's positioned
 
-        window.MockOS.state.lastWindowPosition = { top: newTop, left: newLeft };
+        window.MemeOS.state.lastWindowPosition = { top: newTop, left: newLeft };
 
         taskbarAdd(app, win);
         focusWindow(win);

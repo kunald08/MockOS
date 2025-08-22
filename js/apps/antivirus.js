@@ -101,7 +101,7 @@ function createAntivirusWindow() {
                 clearInterval(interval);
                 scanningView.classList.add('hidden');
 
-                detectedThreats = threats.filter(t => !window.MockOS.state.quarantinedThreats.has(t));
+                detectedThreats = threats.filter(t => !window.MemeOS.state.quarantinedThreats.has(t));
 
                 if (detectedThreats.length === 0) {
                     noThreatsView.classList.remove('hidden');
@@ -121,7 +121,7 @@ function createAntivirusWindow() {
     rescanBtn2.addEventListener('click', resetToScanView);
 
     quarantineBtn.addEventListener('click', () => {
-        detectedThreats.forEach(t => window.MockOS.state.quarantinedThreats.add(t));
+        detectedThreats.forEach(t => window.MemeOS.state.quarantinedThreats.add(t));
         quarantineBtn.disabled = true;
         quarantineBtn.textContent = 'Threats Quarantined';
         quarantineBtn.classList.remove('bg-red-600', 'hover:bg-red-700');

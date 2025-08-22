@@ -77,7 +77,7 @@ const BASED_METER_QUESTIONS = [
       { text: "Watching NPC compilations", value: -1 },
       { text: "Motivational edits with Kanye in background", value: 2 },
       { text: "Still playing Among Us daily", value: -2 },
-      { text: "Building MockOS", value: 3 },
+      { text: "Building MemeOS", value: 3 },
     ],
   },
   {
@@ -96,7 +96,7 @@ const BASED_METER_RESULTS = [
     score: 15,
     title: "ULTRA BASED",
     description:
-      "You are not just based – you’re the final boss of Rizz, the gym of wisdom, the giga of chads.<br>The council of MockOS has seen your grindset and approved your ascension.",
+      "You are not just based – you’re the final boss of Rizz, the gym of wisdom, the giga of chads.<br>The council of MemeOS has seen your grindset and approved your ascension.",
     achievements: [
       "☑ Skibidi Resistance",
       "☑ Sigma Upgrade v3.0",
